@@ -12,7 +12,6 @@ const stations = [
     { name: "SF-UR", logo: "img/SFUR.png", file: "https://www.dropbox.com/scl/fi/plk0bquq892pau0h06xk5/SF-UR.ogg?rlkey=6hz4lfd7f4e6axvmtdh3hdsrp&st=vs46r7j9&raw=1", duration: 3973 },
     { name: "WCTR", logo: "img/WCTR.png", file: "https://www.dropbox.com/scl/fi/zl5jqlhy132qsunbd47o4/West-Coast-Talk-Radio.ogg?rlkey=4400rfyv0cpdvhtzp8o2bflep&st=jmf3rrvk&raw=1", duration: 6599 },
     { name: "Guardians of the Galaxy", logo: "img/Guardians of the Galaxy.png", file: "https://www.dropbox.com/scl/fi/g6uxuktvqu41sa8kv1k6r/Guardians-of-the-Galaxy.ogg?rlkey=wljmxuoa35ulnr62g66ccdvgg&st=ku9pq08h&raw=1", duration: 3217 }
-    { name: "Radio Futuro", logo: "img/Radio Futuro.png", file: "https://www.dropbox.com/scl/fi/4h7qq2hzlecu2noj31zw2/Radio-Futuro.ogg?rlkey=fdgp0vasf1jxtuigeb3du9xix&st=mmrukwvk&raw=1", duration: 43202 }
 ];
 
 let currentIdx = 0;
