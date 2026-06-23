@@ -1,26 +1,37 @@
 const stations = [
     { name: "Radio Off", logo: "img/RadioOff.png", file: "", duration: 0 },
-    { name: "Bounce FM", logo: "img/BounceFM.png", file: "https://www.dropbox.com/scl/fi/ca7wu3m85r58rgbv9pd7g/Bounce-FM.ogg?rlkey=v7qw43n1h981dcomxfjpve96v&st=5gx1zfuf&raw=1", duration: 3902 },
-    { name: "CSR 103.9", logo: "img/CSR1039.png", file: "https://www.dropbox.com/scl/fi/fpdmf6o39nbadvw137au1/CSR-103.9.ogg?rlkey=rx77lkc6nhbujzgna49ctl9q9&st=89cquejz&raw=1", duration: 2844 },
-    { name: "K-DST", logo: "img/K-DST.png", file: "https://www.dropbox.com/scl/fi/oosqrvx814k1e3cc5tgup/K-DST.ogg?rlkey=fvf1umkp0y16c1it3n04v2ixx&st=37bzczhr&raw=1", duration: 4001 },
-    { name: "K-JAH West", logo: "img/KJAHWest.png", file: "https://www.dropbox.com/scl/fi/bke95j1p5xoph0li70xm/K-JAH-West.ogg?rlkey=t0x395wzoo3s1slyvmtb364x3&st=p4861lcp&raw=1", duration: 3633 },
-    { name: "K-Rose", logo: "img/K-Rose.png", file: "https://www.dropbox.com/scl/fi/9rqncuwg57ytnhxgogxhw/K-Rose.ogg?rlkey=stkyv5gbrzgg16g1o020j0r8u&st=g5hmzkx2&raw=1", duration: 2886 },
-    { name: "Master Sounds 98.3", logo: "img/MasterSounds983.png", file: "https://www.dropbox.com/scl/fi/1vgwoli2ml2u7i24ft643/Master-Sounds-98.3.ogg?rlkey=bd1gph4a2wnqkc6nsq2p0x2sp&st=waoj51bo&raw=1", duration: 4061 },
-    { name: "Playback FM", logo: "img/PlaybackFM.png", file: "https://www.dropbox.com/scl/fi/5c15ncg6pjxwfr8ls0dga/Playback-FM.ogg?rlkey=aygen0ilmxtmg3oppbnpb633f&st=lvhvgtw6&raw=1", duration: 2810 },
-    { name: "Radio Los Santos", logo: "img/RadioLosSantos.png", file: "https://www.dropbox.com/scl/fi/sinj8ub6wcg6t6sly5upa/Radio-Los-Santos.ogg?rlkey=mil43l09kuhu1fjpj8pl8llfz&st=54uerjxk&raw=1", duration: 3863 },
-    { name: "Radio X", logo: "img/RadioX.png", file: "https://www.dropbox.com/scl/fi/4rvm9go6hrz96wqdh3lpg/Radio-X.ogg?rlkey=c9sy9p84hng643ci46preq4pl&st=vv0zqu8r&raw=1", duration: 3469 },
-    { name: "SF-UR", logo: "img/SFUR.png", file: "https://www.dropbox.com/scl/fi/plk0bquq892pau0h06xk5/SF-UR.ogg?rlkey=6hz4lfd7f4e6axvmtdh3hdsrp&st=vs46r7j9&raw=1", duration: 3973 },
-    { name: "WCTR", logo: "img/WCTR.png", file: "https://www.dropbox.com/scl/fi/zl5jqlhy132qsunbd47o4/West-Coast-Talk-Radio.ogg?rlkey=4400rfyv0cpdvhtzp8o2bflep&st=jmf3rrvk&raw=1", duration: 6599 },
+    
+    // ESTA ES TU NUEVA SUB-CARPETA
+    { 
+        name: "GTA", 
+        logo: "img/san.png", // Asigna aquí la carátula de la carpeta
+        isFolder: true,
+        subStations: [
+            { name: "Bounce FM", logo: "img/BounceFM.png", file: "https://www.dropbox.com/scl/fi/ca7wu3m85r58rgbv9pd7g/Bounce-FM.ogg?rlkey=v7qw43n1h981dcomxfjpve96v&st=5gx1zfuf&raw=1", duration: 3902 },
+            { name: "CSR 103.9", logo: "img/CSR1039.png", file: "https://www.dropbox.com/scl/fi/fpdmf6o39nbadvw137au1/CSR-103.9.ogg?rlkey=rx77lkc6nhbujzgna49ctl9q9&st=89cquejz&raw=1", duration: 2844 },
+            { name: "K-DST", logo: "img/K-DST.png", file: "https://www.dropbox.com/scl/fi/oosqrvx814k1e3cc5tgup/K-DST.ogg?rlkey=fvf1umkp0y16c1it3n04v2ixx&st=37bzczhr&raw=1", duration: 4001 },
+            { name: "K-JAH West", logo: "img/KJAHWest.png", file: "https://www.dropbox.com/scl/fi/bke95j1p5xoph0li70xm/K-JAH-West.ogg?rlkey=t0x395wzoo3s1slyvmtb364x3&st=p4861lcp&raw=1", duration: 3633 },
+            { name: "K-Rose", logo: "img/K-Rose.png", file: "https://www.dropbox.com/scl/fi/9rqncuwg57ytnhxgogxhw/K-Rose.ogg?rlkey=stkyv5gbrzgg16g1o020j0r8u&st=g5hmzkx2&raw=1", duration: 2886 },
+            { name: "Master Sounds 98.3", logo: "img/MasterSounds983.png", file: "https://www.dropbox.com/scl/fi/1vgwoli2ml2u7i24ft643/Master-Sounds-98.3.ogg?rlkey=bd1gph4a2wnqkc6nsq2p0x2sp&st=waoj51bo&raw=1", duration: 4061 },
+            { name: "Playback FM", logo: "img/PlaybackFM.png", file: "https://www.dropbox.com/scl/fi/5c15ncg6pjxwfr8ls0dga/Playback-FM.ogg?rlkey=aygen0ilmxtmg3oppbnpb633f&st=lvhvgtw6&raw=1", duration: 2810 },
+            { name: "Radio Los Santos", logo: "img/RadioLosSantos.png", file: "https://www.dropbox.com/scl/fi/sinj8ub6wcg6t6sly5upa/Radio-Los-Santos.ogg?rlkey=mil43l09kuhu1fjpj8pl8llfz&st=54uerjxk&raw=1", duration: 3863 },
+            { name: "Radio X", logo: "img/RadioX.png", file: "https://www.dropbox.com/scl/fi/4rvm9go6hrz96wqdh3lpg/Radio-X.ogg?rlkey=c9sy9p84hng643ci46preq4pl&st=vv0zqu8r&raw=1", duration: 3469 },
+            { name: "SF-UR", logo: "img/SFUR.png", file: "https://www.dropbox.com/scl/fi/plk0bquq892pau0h06xk5/SF-UR.ogg?rlkey=6hz4lfd7f4e6axvmtdh3hdsrp&st=vs46r7j9&raw=1", duration: 3973 },
+            { name: "WCTR", logo: "img/WCTR.png", file: "https://www.dropbox.com/scl/fi/zl5jqlhy132qsunbd47o4/West-Coast-Talk-Radio.ogg?rlkey=4400rfyv0cpdvhtzp8o2bflep&st=jmf3rrvk&raw=1", duration: 6599 }
+        ]
+    },
+
+    // LAS DEMÁS CANCIONES SE QUEDAN EN LA RAÍZ PRINCIPAL
     { name: "Guardians of the Galaxy", logo: "img/Guardians of the Galaxy.png", file: "https://www.dropbox.com/scl/fi/g6uxuktvqu41sa8kv1k6r/Guardians-of-the-Galaxy.ogg?rlkey=wljmxuoa35ulnr62g66ccdvgg&st=ku9pq08h&raw=1", duration: 3217 },
     { name: "Futuro", logo: "img/Radio Futuro.png", file: "https://www.dropbox.com/scl/fi/4h7qq2hzlecu2noj31zw2/Radio-Futuro.ogg?rlkey=fdgp0vasf1jxtuigeb3du9xix&st=mmrukwvk&raw=1", duration: 3599 },
     { name: "FlatOut 2", logo: "img/FlatOut.png", file: "https://www.dropbox.com/scl/fi/1z5nx1yqepss72yzn8155/Flatout2.ogg?rlkey=zyknwgn4a8r0s4kymo2ttx01l&st=duu73zkt&raw=1", duration: 5261 },
     { name: "Lo-fi", logo: "img/lofi.png", file: "https://www.dropbox.com/scl/fi/4uftocmw99ge7j01du0kn/Lofi.ogg?rlkey=sc9b3uiauj1sgf09up30hdxlm&st=0enl19m4&raw=1", duration: 1762 },
     { name: "Old School", logo: "img/rege.png", file: "https://www.dropbox.com/scl/fi/d0dnc8d2nboygn9txgc1y/Reggaet-n-viejito-Dj-Ricardo-Mu-oz.ogg?rlkey=uctaxmadvh7sn2onoqtclaslu&st=2oj4sqo5&raw=1", duration: 4048 },
     { name: "Tokyo drift", logo: "img/dri.png", file: "https://www.dropbox.com/scl/fi/oivb6ya2v1wj22flsgdlg/mix_53m02s-_audio-joiner.com_.ogg?rlkey=41ll3guiyo10gsbagxzgaf19a&st=onx9c5p&raw=1", duration: 3182 }
-
 ];
 
 let currentIdx = 0;
+let subIdx = -1; // -1 significa que estamos en la carpeta raíz, >= 0 significa dentro de la sub-carpeta
 let startX = 0;
 let startY = 0;
 let actionTriggered = false; 
@@ -35,10 +46,16 @@ function playMenuSfx() {
     menuSfx.play().catch(() => {});
 }
 
-function updateUI(index = currentIdx) {
-    const current = stations[index];
+function updateUI() {
+    let current;
+    if (subIdx === -1) {
+        current = stations[currentIdx];
+    } else {
+        current = stations[currentIdx].subStations[subIdx];
+    }
+
     stationLogo.src = current.logo;
-    stationName.textContent = current.name;
+    stationName.textContent = current.isFolder ? `📂 ${current.name}` : current.name;
 
     stationLogo.classList.remove("flash");
     requestAnimationFrame(() => {
@@ -46,15 +63,20 @@ function updateUI(index = currentIdx) {
     });
 }
 
-function applyStation(index) {
-    currentIdx = (index + stations.length) % stations.length;
-    const station = stations[currentIdx];
+function applyStation() {
+    let station;
+    if (subIdx === -1) {
+        station = stations[currentIdx];
+    } else {
+        station = stations[currentIdx].subStations[subIdx];
+    }
 
-    updateUI(currentIdx);
+    updateUI();
     playMenuSfx();
     audio.pause();
 
-    if (!station.file) {
+    // Si es una carpeta o es Radio Off, no reproducir audio
+    if (station.isFolder || !station.file) {
         audio.src = "";
         return;
     }
@@ -73,17 +95,44 @@ function applyStation(index) {
 }
 
 function nextStation() {
-    const next = (currentIdx + 1) % stations.length;
-    applyStation(next);
+    if (subIdx === -1) {
+        currentIdx = (currentIdx + 1) % stations.length;
+    } else {
+        const subList = stations[currentIdx].subStations;
+        subIdx = (subIdx + 1) % subList.length;
+    }
+    applyStation();
 }
 
 function previousStation() {
-    const prev = (currentIdx - 1 + stations.length) % stations.length;
-    applyStation(prev);
+    if (subIdx === -1) {
+        currentIdx = (currentIdx - 1 + stations.length) % stations.length;
+    } else {
+        const subList = stations[currentIdx].subStations;
+        subIdx = (subIdx - 1 + subList.length) % subList.length;
+    }
+    applyStation();
 }
 
 function turnRadioOff() {
-    applyStation(0);
+    if (subIdx !== -1) {
+        // Si está dentro de la carpeta, el deslizamiento hacia abajo te saca de ella
+        subIdx = -1;
+    } else {
+        // Si ya está afuera, apaga la radio
+        currentIdx = 0;
+    }
+    applyStation();
+}
+
+function checkEnterFolder() {
+    // Si estás parado sobre la carpeta y no has entrado, entrar al primer elemento
+    if (subIdx === -1 && stations[currentIdx].isFolder) {
+        subIdx = 0;
+        applyStation();
+        return true;
+    }
+    return false;
 }
 
 function pointerDown(event) {
@@ -99,11 +148,11 @@ function pointerMove(event) {
     const touch = event.touches ? event.touches[0] : event;
     const deltaX = touch.clientX - startX;
     const deltaY = touch.clientY - startY;
-    const threshold = 35; // Sensibilidad de arrastre en píxeles
+    const threshold = 35; 
 
     if (Math.abs(deltaX) > threshold || Math.abs(deltaY) > threshold) {
         if (Math.abs(deltaX) > Math.abs(deltaY)) {
-            // Movimiento Horizontal: Cambiar Emisora (Verde)
+            // Movimiento Horizontal: Cambiar Emisora
             document.body.classList.remove("holding-off");
             document.body.classList.add("holding-change");
             
@@ -114,12 +163,19 @@ function pointerMove(event) {
             }
             actionTriggered = true;
         } else {
-            // Movimiento Vertical Hacia Abajo: Apagar (Rojo Tirado a Rosa)
+            // Movimiento Vertical
             if (deltaY > 0) {
+                // Hacia abajo: Salir de carpeta / Apagar
                 document.body.classList.remove("holding-change");
                 document.body.classList.add("holding-off");
                 turnRadioOff();
                 actionTriggered = true;
+            } else if (deltaY < 0) {
+                // Hacia arriba: Intentar abrir la carpeta seleccionada
+                if (checkEnterFolder()) {
+                    document.body.classList.add("holding-change");
+                    actionTriggered = true;
+                }
             }
         }
     }
@@ -137,5 +193,5 @@ window.addEventListener("mousedown", pointerDown);
 window.addEventListener("mousemove", pointerMove);
 window.addEventListener("mouseup", pointerUp);
 
+// Inicializar
 updateUI();
-applyStation(0);
