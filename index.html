@@ -16,6 +16,7 @@
 <body>
 
 <div id="app">
+    <button id="config-toggle" aria-label="Configuración">⚙️</button>
 
     <div id="radio-card">
         <div id="logo-container">
@@ -29,10 +30,52 @@
         <span>↑ entrar</span>
         <span>↓ salir / apagar</span>
     </div>
-
 </div>
 
-<audio id="radio-audio" loop></audio>
+<div id="config-panel" class="hidden">
+    <div id="config-content">
+        <h2>CONFIGURACIÓN</h2>
+        <hr>
+        
+        <div class="config-group">
+            <label for="volume-control">Volumen</label>
+            <input type="range" id="volume-control" min="0" max="1" step="0.05" value="1">
+        </div>
+
+        <div class="config-group">
+            <label for="color-control">Color Neón</label>
+            <select id="color-control">
+                <option value="cyan" selected>Cian</option>
+                <option value="magenta">Magenta</option>
+                <option value="green">Verde</option>
+                <option value="yellow">Amarillo</option>
+            </select>
+        </div>
+
+        <div class="config-group checkbox-group">
+            <label>
+                <input type="checkbox" id="rhythm-control"> Ritmo de la música
+            </label>
+        </div>
+
+        <div class="config-group checkbox-group">
+            <label>
+                <input type="checkbox" id="rotation-control"> Rotar carátula
+            </label>
+        </div>
+
+        <hr>
+        <div id="credits-section">
+            <h3>CRÉDITOS Y DESARROLLO</h3>
+            <p><strong>Creador y Desarrollador:</strong> Usuario Principal</p>
+            <p><strong>Plataforma de Código:</strong> GitHub</p>
+            <p><strong>IA de Soporte (Armador):</strong> Google Gemini</p>
+            <p><strong>Servicios Involucrados:</strong> Dropbox, SoundJay, Google Fonts</p>
+        </div>
+    </div>
+</div>
+
+<audio id="radio-audio" loop crossorigin="anonymous"></audio>
 <audio id="static-sfx" src="https://www.soundjay.com/tv-and-radio/static-radio-01.mp3"></audio>
 <audio id="menu-sfx" src="img/gta-sa-menu.mp3"></audio>
 
